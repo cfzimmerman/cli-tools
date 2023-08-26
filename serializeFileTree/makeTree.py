@@ -33,6 +33,9 @@ class FileTree:
     def __appendPath(self, path: List[str], ind: int, parent: Dict) -> ():
         """Adds a filepath to the JSON file tree"""
         name = path[ind]
+        if len(name) > 1 and name[0] == ".":
+            # ignore private resources
+            return
         if ind == len(path) - 1:
             if "files" not in parent:
                 parent["files"] = []
