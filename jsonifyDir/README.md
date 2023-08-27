@@ -6,6 +6,6 @@ for quickly exploring new projects.
 ```zsh
 function explore_dir () {
   bash /Users/cory/projects/cli-tools/jsonifyDir/jsonifyDir.sh "$(pwd)" \
-    '^\.git$|^target$|^node_modules$'
+    '^\.git$|^target$|^node_modules$|^venv$'
 }
 ```
