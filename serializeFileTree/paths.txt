@@ -7,6 +7,7 @@
 ~/home/documents/work/projects/project2/code/main.sh
 ~/home/music/playlists/summer2023.mov
 ~/home/music/albums/favorite.wav
+~/home/music/albums/favorite.wav
 ~/home/pictures/vacation/summer2021.md
 ~/home/pictures/vacation/summer2021/beach.png
 ~/home/pictures/vacation/summer2021/mountains.png
@@ -22,3 +23,7 @@
 ~/downloads/software/utils/file_compressor.rs
 ~/downloads/ebooks/fiction/book1.pdf
 ~/tmp/cache.byte
+~/home/.git/massiveDirectory/hash.git
+~/home/target/debug/hugeBuildDir/package.rs
+~/home/ts/node_modules/100kdeps/config.json
+~/.zshrc
