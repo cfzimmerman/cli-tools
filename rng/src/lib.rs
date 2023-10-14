@@ -14,12 +14,13 @@ pub fn gen_random<W: Write>(input: &[String], err_log: &mut W) -> Option<Vec<i64
 
     let parsed_count = match input.get(1) {
         None => {
-            writeln!(err_log, "Please provide one or more arguments:").expect("failed to log err");
+            writeln!(err_log, "\nPlease provide one or more arguments:")
+                .expect("failed to log err");
             writeln!(err_log, "rng (count):").expect("failed to log err");
             writeln!(err_log, "rng (count) (max):").expect("failed to log err");
             writeln!(err_log, "rng (count) (min) (max):").expect("failed to log err");
             writeln!(err_log, "default min = 0, max = 10").expect("failed to log err");
-            writeln!(err_log, "ex: `rng 3 0 2` might yield `[0, 2, 1]`")
+            writeln!(err_log, "\nex: `rng 3 0 2` might yield `[0, 2, 1]`")
                 .expect("failed to log err");
             return None;
         }
